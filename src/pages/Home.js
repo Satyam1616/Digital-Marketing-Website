@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';  // Import Link component
 import '../styles/Home.css';
 
 function Home() {
@@ -9,7 +10,7 @@ function Home() {
         <div className="hero-content" data-aos="fade-right">
           <h1>Welcome to SP Digital Marketing</h1>
           <p>Empowering businesses with digital growth and strategies that drive results.</p>
-          <button className="cta-button">Get Started</button>
+          <Link to="/contact" className="cta-button">Get Started</Link> {/* Using Link */}
         </div>
         <img src="/assets/hero-banner.jpg" alt="Digital Marketing" className="hero-image" />
       </section>
@@ -49,7 +50,7 @@ function Home() {
       <section className="cta">
         <h2>Ready to Grow Your Business?</h2>
         <p>Contact us today and let’s make your digital dreams a reality.</p>
-        <button className="cta-button">Contact Us</button>
+        <Link to="/contact" className="cta-button">Contact Us</Link> {/* Using Link */}
       </section>
     </div>
   );
